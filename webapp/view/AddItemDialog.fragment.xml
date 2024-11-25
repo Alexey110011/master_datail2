@@ -1,0 +1,67 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core">
+   <Dialog
+      id="addItemDialog"
+      title="Hello"
+      class  = "sapUiContentPadding">
+   	<content>
+   		<VBox>
+	   		<Label text= "Instance" labelFor  = "idInstance"/>
+	   		<Input id = "idInstance" value = " "/>
+	   	</VBox>
+	   	<VBox>
+	   		<Label text= "Header ID" labelFor  = "idHeaderID"/>
+	   		<Input id = "idHeaderID" value = " "/>
+	   	</VBox>
+	   	<VBox>
+	   		<Label text= "ID" labelFor  = "idID"/>
+	   		<Input id = "idID" value = " "/>
+	   	</VBox>
+	   	<VBox>
+	   		<Label text= "Material ID" labelFor  = "idMaterialID"/>
+	   		<Input id = "idMaterialID" value = " "/>
+	   	</VBox>
+	   	<!--<VBox>
+	   		<Label text= "Group ID" labelFor  = "idGroupID"/>
+	   		<Input id = "idGroupID" value = " "/>
+	   	</VBox>-->
+	   	<VBox>
+	   		<Label text= "MaterialText" labelFor  = "idMaterialText"/>
+	   		<Input id = "idMaterialText" value = " "/>
+	   	</VBox>
+	   	<VBox>
+	   		<Label text= "Quantity" labelFor  = "idQuantity"/>
+	   		<Input id = "idQuantity" value = " "/>
+	   	</VBox>
+	   	<VBox>
+	   		<Label text= "Price" labelFor  = "idPrice"/>
+	   		<Input id = "idPrice" value = " "/>
+	   	</VBox>
+	   	<VBox>
+	   		<Label text= "CreatedBy" labelFor  = "idCreatedBy"/>
+	   		<Input id = "idCreatedBy" value = " "/>
+	   	</VBox>
+	   	<VBox>
+	   		<Label text= "IntegrationID" labelFor  = "idIntegrationID"/>
+	   		<Input id = "idIntegrationID" value = " "/>
+	   	</VBox>
+	    </content>
+	     <beginButton>
+		   	<Button 
+			 id = "addDialogButton"
+			 text  = "Add"
+			 press = ".onAddItemLocal"
+			 class = "sapUiSmallMarginEnd"
+			 type = "Emphasized"/>
+		 </beginButton>
+	    <endButton>
+		   	<Button 
+			 id = "closeDialogButton"
+			 text  = "Close"
+			 press = ".onCloseAddItemDialog"
+			 class = "sapUiSmallMarginEnd"
+			 type = "Transparent"/>
+		 </endButton>
+   	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,67 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core">
+   <Dialog
+      id="updateItemDialog"
+      title="Hello"
+      class  = "sapUiContentPadding">
+   	<content>
+   		<VBox>
+	   		<Label text= "Instance" labelFor  = "idInstanceUpd"/>
+	   		<Input id = "idInstanceUpd" value = "{Instance}" enabled = "false"/>
+	   	</VBox>
+	   	<VBox>
+	   		<Label text= "Header ID" labelFor  = "idHeaderIDUpd"/>
+	   		<Input id = "idHeaderIDUpd" value = "{HeaderID}" enabled = "false"/>
+	   	</VBox>
+	   	<VBox>
+	   		<Label text= "ItemID" labelFor  = "idItemIDUpd"/>
+	   		<Input id = "idItemIDUpd" value = "{ItemID}" enabled = "false"/>
+	   	</VBox>
+	   	<VBox>
+	   		<Label text= "Material ID" labelFor  = "idMaterialIDUpd"/>
+	   		<Input id = "idMaterialIDUpd" value = "{MaterialID}"/>
+	   	</VBox>
+	   	<!--<VBox>
+	   		<Label text= "Group ID" labelFor  = "idGroupID"/>
+	   		<Input id = "idGroupID" value = " "/>
+	   	</VBox>-->
+	   	<VBox>
+	   		<Label text= "MaterialText" labelFor  = "idMaterialTextUpd"/>
+	   		<Input id = "idMaterialTextUpd" value = "{MaterialText}"/>
+	   	</VBox>
+	   	<VBox>
+	   		<Label text= "Quantity" labelFor  = "idQuantityUpd"/>
+	   		<Input id = "idQuantityUpd" value = "{Quantity}"/>
+	   	</VBox>
+	   	<VBox>
+	   		<Label text= "Price" labelFor  = "idPriceUpd"/>
+	   		<Input id = "idPriceUpd" value = "{Price}"/>
+	   	</VBox>
+	   	<VBox>
+	   		<Label text= "CreatedBy" labelFor  = "idCreatedByUpd"/>
+	   		<Input id = "idCreatedByUpd" value = "{CreatedBy}"/>
+	   	</VBox>
+	   	<VBox>
+	   		<Label text= "IntegrationID" labelFor  = "idIntegrationIDUpd"/>
+	   		<Input id = "idIntegrationIDUpd" value = "{IntegrationID}"/>
+	   	</VBox>
+	    </content>
+	     <beginButton>
+		   	<Button 
+			 id = "updateDialogButton"
+			 text  = "Update"
+			 press = "._onUpdateItem"
+			 class = "sapUiSmallMarginEnd"
+			 type = "Emphasized"/>
+		 </beginButton>
+	    <endButton>
+		   	<Button 
+			 id = "closeUpdateDialogButton"
+			 text  = "Close"
+			 press = ".onCloseUpdateItemDialog"
+			 class = "sapUiSmallMarginEnd"
+			 type = "Transparent"/>
+		 </endButton>
+   	</Dialog>
+</core:FragmentDefinition>
